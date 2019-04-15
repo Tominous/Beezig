@@ -627,7 +627,7 @@ public class BeezigMain {
 
         checkForFileExist(new File(mcFile + "/autovote.yml"), false);
         AutovoteUtils.load();
-        // watisdis.wat = new ApiTIMV("RoccoDev").getTitle();
+         watisdis.wat = new ApiTIMV("RoccoDev").getTitle();
 
         HivePlayer api = new HivePlayer(The5zigAPI.getAPI().getGameProfile().getId().toString().replace("-", ""));
         playerRank = NetworkRank.fromDisplay(api.getRank().getHumanName());
@@ -967,7 +967,7 @@ public class BeezigMain {
 
     @EventHandler
     public void onActionBar(ActionBarEvent bar) {
-        // The5zigAPI.getLogger().info(bar.getMessage());
+         The5zigAPI.getLogger().info(bar.getMessage());
         if ((ActiveGame.is("gnt") || ActiveGame.is("gntm")) && bar.getMessage().contains("❂")) {
             // §6❂ §e12§7 ❘ §c§lDestructible Land§7 ❘ §f0§b Kills
             Giant.gold = Integer
